@@ -55,7 +55,11 @@
     <li><a href="#tema5">Tema 5</a></li>
   </ol>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
   
   <div class="window">
 
@@ -412,6 +416,16 @@ Muestreo aleatorio
   
       <li> 2.1.7 Teorema del Binomio:  </li>
   
+      <p>
+        Describe la forma de expandir una expresión binomial, es decir, una expresión que consta 
+        de la suma de dos términos elevada a una potencia entera positiva. <br>
+        Su fórmula es:
+        $$
+        a + b)^n = \sum_{k=0}^n \frac{n!}{k!(n-k)!} a^{n-k} b^k
+        $$
+
+      </p>
+
     </ul>
   
   <hr>
@@ -932,15 +946,19 @@ $$
 <p>
 Se utiliza cuando un muestreo no puede ser reemplazado de una población finita.
 Su fórmula es la siguiente: 
+$$
 f(k; N, n, K) = \frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}
-
+$$
+<br>
 Su fórmula para obtener su media es:
 $$
 \frac{nK}{N}
 $$
 
 Y para obtener su varianza es la siguiente:
-
+$$
+\frac{nK(N-K)(N-n)}{N^2(N-1)}
+$$
 </p>
 
 <hr>
@@ -964,9 +982,19 @@ $$
 f(k; \lambda) = \frac{e^{-\lambda}\lambda^k}{k!}
 $$
 
-<p>Lambda = número promedio de eventos por cada tiempo definido</p>
-
-
+<p>Lambda = número promedio de eventos por cada tiempo definido</p> <br>
+<p>
+    Se obtiene su media mediante:
+</p>
+$$
+\lambda
+$$
+<p>
+    Se obtiene su varianza mediante:
+</p>
+$$
+\lambda
+$$
 <hr>
 
 <h3> 4.5 Distribución normal: </h3>
@@ -977,9 +1005,7 @@ distribución normal puede obtener.
 </p>
 <p>La función para esta distribución tiene forma de campana.</p>
 <p>Tiene como características:</p>
-$$
-f(k; \lambda) = \frac{e^{-\lambda}\lambda^k}{k!}
-$$
+
 <p>
 <ul>
     <li>Ser simétrica.</li>
@@ -992,6 +1018,16 @@ $$
 Su fórmula es la siguiente:
 $$
 f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
+<br>
+Su media se calcula como:
+$$
+\mu
+$$
+
+Su varianza se calcula como:
+$$
+\sigma^2
 $$
 </p>
 
@@ -1146,12 +1182,14 @@ Esto es:
   
       <li>5.1.5 Distribución normal bidimensional:</li>
           <p>
-            Se consideran dos variables X e Y sobre una población.
+            se asume que los pares de valores de las variables independiente (x) y dependiente (y) 
+            siguen conjuntamente una distribución normal o gaussiana. Esto implica dos cosas:
+            Primero, se supone que los errores o residuos del modelo (la diferencia entre los 
+            valores observados y los predichos) tienen una distribución normal. <br>
+            Y segundo, se considera que la distribución conjunta de los pares de valores (x, y) 
+            sigue una distribución normal bidimensional.
 
-            Esta es la fórmula:
-            $$
-            \sum_{i} \sum_{j} f_{ij} = 1
-            $$
+          
 
           </p>
   
